@@ -8,7 +8,7 @@ module "naming" {
 }
 resource "azurerm_resource_group" "resource_group" {
   name     = module.naming.resource_group.name
-  location = var.location
+  location = "westus"
 }
 
 resource "azurerm_app_configuration" "appconf" {
