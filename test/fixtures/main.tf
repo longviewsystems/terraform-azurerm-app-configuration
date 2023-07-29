@@ -1,12 +1,6 @@
 /***************************************************************/
 /*** Terratest only resources
 /***************************************************************/
-data "azurerm_subscription" "current" {}
-
-data "azurerm_role_definition" "contributor" {
-  name = "Contributor"
-}
-
 module "naming" {
   source  = "Azure/naming/azurerm"
   version = "0.3.0"
