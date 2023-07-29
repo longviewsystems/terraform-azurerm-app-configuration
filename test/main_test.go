@@ -7,10 +7,10 @@ import (
 	"github.com/gruntwork-io/terratest/modules/terraform"
 )
 
-func TestTerraformAzureFunctionTest(t *testing.T) {
+func TestTerraformAzureAppConfig(t *testing.T) {
 	options := &terraform.Options{
 		TerraformDir: "./fixtures",
-		VarFiles:     []string{"test.tfvars"},
+		//VarFiles:     []string{"test.tfvars"},
 	}
 
 	defer terraform.Destroy(t, options)

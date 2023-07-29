@@ -2,8 +2,8 @@
 
 SHELL := /bin/bash
 
-azdo-agent-test:
-	echo "Calling azdo-agent-test"	
+terratest-app-config:
+	echo "Testing terratest-app-config""	
 	go test -v -timeout 45m
 clean:
 	@find ../ -name terraform.tfstate -type f -exec rm -rf {} +
