@@ -3,7 +3,7 @@
 SHELL := /bin/bash
 
 terratest-app-config:
-	echo "Testing terratest-app-config""	
+	echo "Testing terratest-app-config"	
 	go test -v -timeout 45m
 clean:
 	@find ../ -name terraform.tfstate -type f -exec rm -rf {} +
